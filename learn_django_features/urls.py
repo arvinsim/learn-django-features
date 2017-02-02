@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from checklist.views import ChecklistHomeView
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^checklist/', ChecklistHomeView.as_view(), name='checklist_home'),
 ]

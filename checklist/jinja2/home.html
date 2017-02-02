@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    {% macro hello_world(name='Arthur') -%} 
+        <div>Hello World from {{ name }}!</div>
+    {%- endmacro %}
+    
+    {{ hello_world() }}
+
+    <label for="">Jinja2</label>
+    <input checked type="checkbox">
+
+    <label for="">Postgres Integration</label>
+    <input checked type="checkbox">
+</body>
+</html>
